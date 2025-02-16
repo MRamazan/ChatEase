@@ -28,7 +28,8 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 ### Requirements
 - Python 3.
   
-- PyTorch (https://pytorch.org/get-started/locally/)
+- PyTorch (https://pytorch.org/get-started/locally/) **tested with 2.5.1+rocm6.2**
+
 
 
 
