@@ -9,15 +9,16 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 ## 🔵Features
 
 - **Notes**: Take notes **(automatic romaji for Japanese notes)**
-- 
+  
 - **Translation**: Translate text between two languages. **(It uses Helsinki-NLP for EN-JA JA-EN translate, google translate for other langauges)**
-- 
+  
 - **Speech Recognition**: Convert spoken words into text.
 
 ## 🔵Setup
 
 ### 🔵Requirements
 - Python 3.x
+  
 - PyTorch (https://pytorch.org/get-started/locally/)
 
 
