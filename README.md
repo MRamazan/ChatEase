@@ -8,6 +8,7 @@ This project is a PyQt5 application that allows users to **practice**, **take no
   
 - **Speech-to-Text**: Converts what the other person says into **text**
 
+
 ## Features
 
 - **Notes**: Take notes **(automatic romaji for Japanese notes)**
@@ -15,6 +16,12 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 - **Translation**: Translate text between two languages. **(It uses Helsinki-NLP for EN-JA JA-EN translate, google translate for other langauges)*x*
   
 - **Speech Recognition**: Convert spoken words into text.
+
+
+## Screenshots
+![My Logo](Screenshots/screenshot1.png) 
+
+
 
 ## Setup
 
