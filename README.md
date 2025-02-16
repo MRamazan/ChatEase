@@ -2,17 +2,17 @@
 
 This project is a PyQt5 application that allows users to **practice**, **take notes**, and **convert speech to text**. The application consists of three main components:
 
-1. **Notes**: Allows users to take and edit text notes.
+1. **Notes**: Allows users to take notes, **(I am taking notes of the questions i will use for speaking practice.)**
 2. **Translator**: Enables users to translate text between different languages.
-3. **Speech-to-Text**: Converts what the other person says into text in real-time.
+3. **Speech-to-Text**: Converts what the other person says into **text**
 
 ## Features
 
-- **Notes**: Easily take and organize notes. You can save and view any text you input.
-- **Translation**: Translate text between two languages. Translate text written in one language to another.
-- **Speech Recognition**: Convert spoken words into text using the microphone in real-time.
+- **Notes**: Take notes **(automatic romaji for Japanese notes)**
+- **Translation**: Translate text between two languages. **(It uses Helsinki-NLP for EN-JA JA-EN translate, google translate for other langauges)**
+- **Speech Recognition**: Convert spoken words into text.
 
-## Usage
+## Setup
 
 ### Requirements
 
