@@ -24,5 +24,11 @@ Bu proje, kullanıcıların **pratik yapmak**, **not almak** ve **konuşmayı me
 Gerekli kütüphaneleri yüklemek için aşağıdaki komutu çalıştırabilirsiniz:
 
 ```bash
+git clone https://github.com/MRamazan/EasyChat
+cd EasyChat
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
+python3 interface.py
+
 
