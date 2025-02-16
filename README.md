@@ -1,4 +1,4 @@
-# EasyChat
+## EasyChat
 
 Bu proje, kullanıcıların **pratik yapmak**, **not almak** ve **konuşmayı metne dökmek** gibi çeşitli görevleri yerine getirmelerini sağlayan bir PyQt5 uygulamasıdır. Uygulama üç ana bileşenden oluşmaktadır:
 
