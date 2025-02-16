@@ -252,11 +252,11 @@ class SpeechRecognitionThread(QThread):
         self.SAMPLE_RATE = 48000
         self.CHUNK_SIZE = 1024
         self.SILENCE_THRESHOLD = 1000
-        self.SILENCE_CHUNKS = 30
-        self.model = whisper.load_model("tiny")
+        self.SILENCE_CHUNKS = 20
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model = whisper.load_model("tiny").to(device)
         self.audio_queue = Queue()
         self.is_recording = True
-        self.recognizer = sr.Recognizer()
         self.speaker_colors = {}
 
     def get_speaker_color(self, speaker_id):
@@ -952,7 +952,6 @@ QLabel {
 
 
 
-
         if  self.helsinkinlp:
             self.tokenizer_enja = MarianTokenizer.from_pretrained(helsinki_en_ja)
             self.model_enja = MarianMTModel.from_pretrained(helsinki_en_ja).to("cuda")
@@ -961,13 +960,6 @@ QLabel {
             self.model_jaen = MarianMTModel.from_pretrained(helsinki_ja_en).to("cuda")
 
 
-
-        self.translator_selector = QComboBox()
-        self.translator_selector.addItems(["DeepL", "GoogleTranslate"])
-        set_lang_layout.addWidget(QLabel("Translator:"))
-        set_lang_layout.addWidget(self.translator_selector)
-
-        dashboard.addLayout(set_lang_layout)
         dashboard.addWidget(self.theme_button)
 
 
@@ -1046,6 +1038,7 @@ QLabel {
         self.langs_dict_google = GoogleTranslator().get_supported_languages(as_dict=True)
 
         
+
         self.source_lang.addItems(self.langs_dict_google.keys())
         self.target_lang.addItems(self.langs_dict_google.keys())
         
@@ -1235,14 +1228,12 @@ QLabel {
 
     
     def on_source_lang_changed(self, text):
-        selected_lang = text
         selected_code = self.langs_dict_google.get(text)
         self.source_lang_text = selected_code
 
         self.translate_text()
     
     def on_target_lang_changed(self, text):
-        selected_lang = text
         selected_code = self.langs_dict_google.get(text)
         self.target_lang_text = selected_code
 
