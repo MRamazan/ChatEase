@@ -24,7 +24,7 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 
 
 ```bash
-git clone https://github.com/MRamazan/EasyChat
+git clone https://github.com/MRamazan/ChatEase
 cd EasyChat
 
 python3 -m venv venv
