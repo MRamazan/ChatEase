@@ -2,9 +2,11 @@
 
 This project is a PyQt5 application that allows users to **practice**, **take notes**, and **convert speech to text**. The application consists of three main components:
 
-1. **Notes**: Allows users to take notes, **(I am taking notes of the questions i will use for speaking practice.)**
-2. **Translator**: Enables users to translate text between different languages.
-3. **Speech-to-Text**: Converts what the other person says into **text**
+- **Notes**: Allows users to take notes, **(I am taking notes of the questions i will use for speaking practice.)**
+- 
+- **Translator**: Enables users to translate text between different languages.
+- 
+- **Speech-to-Text**: Converts what the other person says into **text**
 
 ## Features
 
