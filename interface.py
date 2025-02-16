@@ -1044,42 +1044,10 @@ QLabel {
         self.source_lang = SearchableComboBox()
         self.target_lang = SearchableComboBox()
         self.langs_dict_google = GoogleTranslator().get_supported_languages(as_dict=True)
-        self.langs_dict_deepl = {
-        "Japanese": "ja",
-        "Arabic":"ar",
-        "Bulgarian":"bg",
-        "Chinese":"zh",
-        "Czech":"cs",
-        "Danish":"da",
-        "Dutch":"nl",
-        "English":"en",
-        "Estonian":"et",
-        "Finnish":"fi",
-        "French":"fr",
-        "German":"de",
-        "Greek":"el",
-        "Hungarian":"hu",
-        "Indonesian":"id",
-        "Italian":"it",
-        "Korean":"ko",
-        "Latvian":"lv",
-        "Lithuanian":"lt",
-        "Norwegian":"nb",
-        "Polish":"pl",
-        "Portuguese":"pt",
-        "Romanian":"ro",
-        "Russian":"ru",
-        "Slovak":"sk",
-        "Slovenian":"sl",
-        "Spanish":"es",
-        "Swedish":"sv",
-        "Turkish":"tr",
-        "Ukrainian":"uk",
-    }
-        
 
-        self.source_lang.addItems(self.langs_dict_deepl.keys())
-        self.target_lang.addItems(self.langs_dict_deepl.keys())
+        
+        self.source_lang.addItems(self.langs_dict_google.keys())
+        self.target_lang.addItems(self.langs_dict_google.keys())
         
 
         self.source_lang.lineEdit().setPlaceholderText("Search source language...")
