@@ -17,11 +17,9 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 ### Requirements
 
 - Python 3.x
-- PyQt5
-- Googletrans (or another translation library)
-- SpeechRecognition (for speech-to-text functionality)
+- PyTorch (https://pytorch.org/get-started/locally/)
 
-To install the required libraries, run the following command:
+
 
 ```bash
 git clone https://github.com/MRamazan/EasyChat
