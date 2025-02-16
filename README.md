@@ -1,4 +1,4 @@
-## EasyChat
+# EasyChat
 
 This project is a PyQt5 application that allows users to **practice**, **take notes**, and **convert speech to text**. The application consists of three main components:
 
