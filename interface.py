@@ -1236,14 +1236,14 @@ QLabel {
     
     def on_source_lang_changed(self, text):
         selected_lang = text
-        selected_code = self.langs_dict_deepl.get(text)
+        selected_code = self.langs_dict_google.get(text)
         self.source_lang_text = selected_code
 
         self.translate_text()
     
     def on_target_lang_changed(self, text):
         selected_lang = text
-        selected_code = self.langs_dict_deepl.get(text)
+        selected_code = self.langs_dict_google.get(text)
         self.target_lang_text = selected_code
 
         self.translate_text()
