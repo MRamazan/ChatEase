@@ -1,27 +1,27 @@
-## EasyChat
+### EasyChat
 
-Bu proje, kullanıcıların **pratik yapmak**, **not almak** ve **konuşmayı metne dökmek** gibi çeşitli görevleri yerine getirmelerini sağlayan bir PyQt5 uygulamasıdır. Uygulama üç ana bileşenden oluşmaktadır:
+This project is a PyQt5 application that allows users to **practice**, **take notes**, and **convert speech to text**. The application consists of three main components:
 
-1. **Notes (Notlar)**: Kullanıcıların metin notları alıp düzenlemesine olanak tanır.
-2. **Translator (Çevirmen)**: Kullanıcıların farklı diller arasında çeviri yapmasına imkan sağlar.
-3. **Speech-to-Text (Konuşmadan Metne)**: Karşıdaki kişinin söylediklerini yazıya dökme fonksiyonu sunar.
+1. **Notes**: Allows users to take and edit text notes.
+2. **Translator**: Enables users to translate text between different languages.
+3. **Speech-to-Text**: Converts what the other person says into text in real-time.
 
-## Özellikler
+## Features
 
-- **Notlar**: Kolayca not alabilir ve düzenleyebilirsiniz. Herhangi bir metni kaydedebilir ve sonra görüntüleyebilirsiniz.
-- **Çeviri**: İki dil arasında metin çevirisi yapabilir. Bir dilde yazılan metni başka bir dile çevirebilirsiniz.
-- **Konuşma Tanıma**: Mikrofon aracılığıyla bir kişinin söylediklerini gerçek zamanlı olarak metne dönüştürür.
+- **Notes**: Easily take and organize notes. You can save and view any text you input.
+- **Translation**: Translate text between two languages. Translate text written in one language to another.
+- **Speech Recognition**: Convert spoken words into text using the microphone in real-time.
 
-## Kullanım
+## Usage
 
-### Gereksinimler
+### Requirements
 
 - Python 3.x
 - PyQt5
-- Googletrans (veya başka bir çeviri kütüphanesi)
-- SpeechRecognition (Konuşma tanıma için)
+- Googletrans (or another translation library)
+- SpeechRecognition (for speech-to-text functionality)
 
-Gerekli kütüphaneleri yüklemek için aşağıdaki komutu çalıştırabilirsiniz:
+To install the required libraries, run the following command:
 
 ```bash
 git clone https://github.com/MRamazan/EasyChat
