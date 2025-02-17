@@ -26,6 +26,8 @@ This project is a PyQt5 application that allows users to **practice**, **take no
 ## Setup
 
 ### Requirements
+- Ubuntu 24.04
+
 - Python 3.12.3
   
 - PyTorch (https://pytorch.org/get-started/locally/) **tested with 2.5.1+rocm6.2**
