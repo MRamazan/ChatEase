@@ -3,7 +3,6 @@ cutlet==0.4.0
 deep-translator==1.11.4
 langdetect==1.0.9
 transformers==4.47.1
-googletrans==4.0.2
 soundcard==0.4.3
 soundfile==0.13.1
 SpeechRecognition==3.14.1
