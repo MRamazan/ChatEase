@@ -262,7 +262,7 @@ class SpeechRecognitionThread(QThread):
     def get_speaker_color(self, speaker_id):
         if speaker_id not in self.speaker_colors:
             colors = ['#FF4444', '#44FF44', '#4444FF', '#FFFF44', '#FF44FF', '#44FFFF']
-            self.speaker_colors[speaker_id] = colors[len(self.speaker_colors) % len(colors)]
+            self.speaker_colors[speaker_id] = colors[5]
         return self.speaker_colors[speaker_id]
 
     def record_audio(self):
@@ -289,7 +289,7 @@ class SpeechRecognitionThread(QThread):
                 current_chunk.extend(chunk)
 
                 if process_clicked:
-                 if silence_counter >= 200:
+                 if silence_counter >= 150:
                     if len(current_chunk) > 0:
                         self.audio_queue.put(np.array(current_chunk))
                     current_chunk = []
