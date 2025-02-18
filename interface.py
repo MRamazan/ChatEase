@@ -19,7 +19,6 @@ from PyQt5.QtCore import QTimer
 from deep_translator import GoogleTranslator
 from langdetect import detect
 from transformers import MarianTokenizer, MarianMTModel
-from googletrans import Translator
 import soundcard as sc
 import soundfile as sf
 import speech_recognition as sr
@@ -37,11 +36,6 @@ helsinki_ja_en = "Helsinki-NLP/opus-mt-ja-en"
 helsinki_en_ja = "Helsinki-NLP/opus-tatoeba-en-ja"
 
 
-
-
-translator = Translator(service_urls=[
-      'translate.google.co.jp',
-    ])
 process_clicked = None
 
 
@@ -950,6 +944,8 @@ QLabel {
         else:
             self.helsinkinlp = False
 
+        self.helsinkinlp = False
+
 
 
         if  self.helsinkinlp:
@@ -1368,6 +1364,7 @@ QLabel {
             romaji_layout.addWidget(romaji_label)
 
             layout.addWidget(romaji_container)
+
 
             if self.helsinkinlp:
                 inputs = self.tokenizer_jaen(text, return_tensors="pt", padding=True, truncation=True)
